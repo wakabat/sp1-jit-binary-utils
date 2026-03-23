@@ -1,0 +1,19 @@
+[package]
+name = "binary-static-runner"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "binary-static-runner"
+path = "src/main.rs"
+
+[dependencies]
+bincode.workspace = true
+clap.workspace = true
+eyre.workspace = true
+tracing-subscriber.workspace = true
+
+sp1-core-executor = { path = "/home/cachy/code/sp1/crates/core/executor", features = ["static-link"] }
+sp1-core-machine.workspace = true
+sp1-jit = { path = "/home/cachy/code/sp1/crates/core/jit", features = ["static-link"] }
+sp1-primitives.workspace = true

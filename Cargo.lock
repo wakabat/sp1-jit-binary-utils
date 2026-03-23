@@ -233,6 +233,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "binary-static-runner"
+version = "0.1.0"
+dependencies = [
+ "bincode",
+ "clap",
+ "eyre",
+ "sp1-core-executor",
+ "sp1-core-machine",
+ "sp1-jit",
+ "sp1-primitives",
+ "tracing-subscriber",
+]
+
+[[package]]
 name = "bincode"
 version = "1.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"

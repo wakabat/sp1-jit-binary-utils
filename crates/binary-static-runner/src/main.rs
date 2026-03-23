@@ -1,7 +1,6 @@
 use clap::Parser;
 use sp1_core_executor::{MinimalExecutor, Program};
 use sp1_core_machine::io::SP1Stdin;
-use sp1_jit::CompiledCode;
 use std::path::PathBuf;
 use std::sync::Arc;
 use tracing_subscriber::{fmt, prelude::*, EnvFilter};
@@ -9,11 +8,8 @@ use tracing_subscriber::{fmt, prelude::*, EnvFilter};
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    #[arg(help = "Path to the RISC-V ELF binary")]
+    #[arg(help = "Path to the RISC-V ELF binary (for memory image)")]
     binary: PathBuf,
-
-    #[arg(help = "Path to the saved JIT result")]
-    jit_binary: PathBuf,
 
     #[arg(help = "Path to the bincode serialized SP1Stdin")]
     stdin: PathBuf,
@@ -38,14 +34,12 @@ fn main() -> eyre::Result<()> {
     let program = Program::from(&elf_bytes)?;
     let program = Arc::new(program);
 
-    let compiled_code = CompiledCode::load(&args.jit_binary)?;
-
     let stdin_bytes = std::fs::read(&args.stdin)?;
     let stdin: SP1Stdin = bincode::deserialize(&stdin_bytes)?;
 
     println!("Running {}", args.binary.display());
 
-    let mut executor = MinimalExecutor::from_compiled(program, &compiled_code);
+    let mut executor = MinimalExecutor::from_static_link(program);
 
     for buf in stdin.buffer {
         executor.with_input(&buf);

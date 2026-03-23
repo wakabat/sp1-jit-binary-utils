@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/binary-dumper", "crates/binary-runner"]
+members = ["crates/binary-dumper", "crates/binary-runner", "crates/binary-static-runner"]
 
 [workspace.dependencies]
 sp1-core-executor = { path = "/home/cachy/code/sp1/crates/core/executor" }
