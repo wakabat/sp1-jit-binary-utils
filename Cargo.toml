@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = ["crates/binary-dumper"]
+
+[workspace.dependencies]
+sp1-core-executor = { path = "/home/cachy/code/sp1/crates/core/executor" }
+sp1-jit = { path = "/home/cachy/code/sp1/crates/core/jit" }
+sp1-primitives = { path = "/home/cachy/code/sp1/crates/primitives" }

@@ -1,0 +1,17 @@
+[package]
+name = "binary-dumper"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "binary-dumper"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+eyre = "0.6"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+sp1-core-executor = { workspace = true }
+sp1-jit = { workspace = true }
+sp1-primitives = { workspace = true }
