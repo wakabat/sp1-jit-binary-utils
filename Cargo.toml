@@ -1,8 +1,14 @@
 [workspace]
 resolver = "2"
-members = ["crates/binary-dumper"]
+members = ["crates/binary-dumper", "crates/binary-runner"]
 
 [workspace.dependencies]
 sp1-core-executor = { path = "/home/cachy/code/sp1/crates/core/executor" }
+sp1-core-machine = { path = "/home/cachy/code/sp1/crates/core/machine" }
 sp1-jit = { path = "/home/cachy/code/sp1/crates/core/jit" }
 sp1-primitives = { path = "/home/cachy/code/sp1/crates/primitives" }
+
+bincode = "1.3"
+clap = { version = "4.5", features = ["derive"] }
+eyre = "0.6"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

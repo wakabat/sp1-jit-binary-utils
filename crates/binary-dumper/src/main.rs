@@ -1,12 +1,8 @@
 use clap::Parser;
-use sp1_core_executor::{MinimalTranspiler, Program};
-use sp1_jit::MemValue;
+use sp1_core_executor::{MinimalTranspiler, Program, MINIMAL_TRACE_CHUNK_THRESHOLD};
 use sp1_primitives::consts::MAX_JIT_LOG_ADDR;
 use std::path::PathBuf;
 use tracing_subscriber::{fmt, prelude::*, EnvFilter};
-
-pub const MINIMAL_TRACE_CHUNK_THRESHOLD: u64 =
-    2147483648 / std::mem::size_of::<MemValue>() as u64;
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
@@ -22,6 +18,23 @@ struct Args {
 
     #[arg(short, long, help = "Output file path for JIT result")]
     output: Option<PathBuf>,
+
+    #[arg(short = 's', long, help = "Output file path for assembly source")]
+    asm_output: Option<PathBuf>,
+
+    #[arg(
+        long,
+        default_value = "sp1_ecall_handler",
+        help = "ECALL symbol name for assembly"
+    )]
+    ecall_symbol: String,
+
+    #[arg(
+        long,
+        default_value = "sp1_unimp_handler",
+        help = "UNIMP symbol name for assembly"
+    )]
+    unimp_symbol: String,
 }
 
 fn main() -> eyre::Result<()> {
@@ -66,6 +79,12 @@ fn main() -> eyre::Result<()> {
     compiled_code.save(&output_path)?;
 
     println!("JIT result saved to {}", output_path.display());
+
+    if let Some(asm_path) = args.asm_output {
+        compiled_code.write_asm_to_file(&asm_path, &args.ecall_symbol, &args.unimp_symbol)?;
+        println!("Assembly saved to {}", asm_path.display());
+    }
+
     println!("  code size: {} bytes", compiled_code.code.len());
     println!("  instructions: {}", compiled_code.jump_table.len());
 
