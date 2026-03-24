@@ -46,13 +46,17 @@ fn main() -> eyre::Result<()> {
     }
 
     let start = std::time::Instant::now();
-    while executor.execute_chunk().is_some() {}
+    let mut count = 0;
+    while executor.execute_chunk().is_some() {
+        count += 1;
+    }
     let elapsed = start.elapsed();
 
     println!("Execution complete:");
     println!("  exit code: {}", executor.exit_code());
     println!("  cycles: {}", executor.global_clk());
     println!("  execution time: {:?}", elapsed);
+    println!("  chunks: {}", count);
     if elapsed.as_secs_f64() > 0.0 {
         println!(
             "  mhz: {}",

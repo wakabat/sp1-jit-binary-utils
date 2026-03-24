@@ -13,7 +13,7 @@ clap.workspace = true
 eyre.workspace = true
 tracing-subscriber.workspace = true
 
-sp1-core-executor = { path = "/home/cachy/code/sp1/crates/core/executor", features = ["static-link"] }
+sp1-core-executor = { version = "6.0.2", features = ["static-link"] }
+sp1-jit = { version = "6.0.2", features = ["static-link"] }
 sp1-core-machine.workspace = true
-sp1-jit = { path = "/home/cachy/code/sp1/crates/core/jit", features = ["static-link"] }
 sp1-primitives.workspace = true
