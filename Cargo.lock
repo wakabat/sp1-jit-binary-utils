@@ -2029,7 +2029,7 @@ version = "3.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e67ba7e9b2b56446f1d419b1d807906278ffa1a658a8a5d8a39dcb1f5a78614f"
 dependencies = [
- "toml_edit 0.25.5+spec-1.1.0",
+ "toml_edit 0.25.8+spec-1.1.0",
 ]
 
 [[package]]
@@ -2379,7 +2379,7 @@ checksum = "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5"
 [[package]]
 name = "slop-air"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-air",
 ]
@@ -2387,7 +2387,7 @@ dependencies = [
 [[package]]
 name = "slop-algebra"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "itertools 0.14.0",
  "p3-field",
@@ -2397,7 +2397,7 @@ dependencies = [
 [[package]]
 name = "slop-alloc"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "serde",
  "slop-algebra",
@@ -2407,7 +2407,7 @@ dependencies = [
 [[package]]
 name = "slop-baby-bear"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "lazy_static",
  "p3-baby-bear",
@@ -2421,7 +2421,7 @@ dependencies = [
 [[package]]
 name = "slop-basefold"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "itertools 0.14.0",
@@ -2443,7 +2443,7 @@ dependencies = [
 [[package]]
 name = "slop-basefold-prover"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "itertools 0.14.0",
@@ -2469,7 +2469,7 @@ dependencies = [
 [[package]]
 name = "slop-bn254"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "ff 0.13.1",
  "p3-bn254-fr",
@@ -2484,7 +2484,7 @@ dependencies = [
 [[package]]
 name = "slop-challenger"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "futures",
  "p3-challenger",
@@ -2496,7 +2496,7 @@ dependencies = [
 [[package]]
 name = "slop-commit"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-commit",
  "serde",
@@ -2506,7 +2506,7 @@ dependencies = [
 [[package]]
 name = "slop-dft"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-dft",
  "serde",
@@ -2519,7 +2519,7 @@ dependencies = [
 [[package]]
 name = "slop-fri"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-fri",
 ]
@@ -2527,7 +2527,7 @@ dependencies = [
 [[package]]
 name = "slop-futures"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "crossbeam",
  "futures",
@@ -2541,7 +2541,7 @@ dependencies = [
 [[package]]
 name = "slop-jagged"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "futures",
@@ -2574,7 +2574,7 @@ dependencies = [
 [[package]]
 name = "slop-keccak-air"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-keccak-air",
 ]
@@ -2582,7 +2582,7 @@ dependencies = [
 [[package]]
 name = "slop-koala-bear"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "lazy_static",
  "p3-koala-bear",
@@ -2596,7 +2596,7 @@ dependencies = [
 [[package]]
 name = "slop-matrix"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-matrix",
 ]
@@ -2604,7 +2604,7 @@ dependencies = [
 [[package]]
 name = "slop-maybe-rayon"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-maybe-rayon",
 ]
@@ -2612,7 +2612,7 @@ dependencies = [
 [[package]]
 name = "slop-merkle-tree"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "ff 0.13.1",
@@ -2638,7 +2638,7 @@ dependencies = [
 [[package]]
 name = "slop-multilinear"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "futures",
@@ -2658,7 +2658,7 @@ dependencies = [
 [[package]]
 name = "slop-poseidon2"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-poseidon2",
 ]
@@ -2666,7 +2666,7 @@ dependencies = [
 [[package]]
 name = "slop-primitives"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "slop-algebra",
 ]
@@ -2674,7 +2674,7 @@ dependencies = [
 [[package]]
 name = "slop-stacked"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "futures",
@@ -2696,7 +2696,7 @@ dependencies = [
 [[package]]
 name = "slop-sumcheck"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "futures",
  "itertools 0.14.0",
@@ -2713,7 +2713,7 @@ dependencies = [
 [[package]]
 name = "slop-symmetric"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-symmetric",
 ]
@@ -2721,7 +2721,7 @@ dependencies = [
 [[package]]
 name = "slop-tensor"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "arrayvec",
  "derive-where",
@@ -2740,7 +2740,7 @@ dependencies = [
 [[package]]
 name = "slop-uni-stark"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-uni-stark",
 ]
@@ -2748,7 +2748,7 @@ dependencies = [
 [[package]]
 name = "slop-utils"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "p3-util",
  "tracing-forest",
@@ -2758,7 +2758,7 @@ dependencies = [
 [[package]]
 name = "slop-whir"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "derive-where",
  "futures",
@@ -2803,7 +2803,7 @@ dependencies = [
 [[package]]
 name = "sp1-core-executor"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "bincode",
  "bytemuck",
@@ -2842,7 +2842,7 @@ dependencies = [
 [[package]]
 name = "sp1-core-executor-runner"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "base64",
  "bincode",
@@ -2863,7 +2863,7 @@ dependencies = [
 [[package]]
 name = "sp1-core-executor-runner-binary"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "bincode",
  "crash-handler",
@@ -2877,7 +2877,7 @@ dependencies = [
 [[package]]
 name = "sp1-core-machine"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "bincode",
  "cfg-if",
@@ -2924,7 +2924,7 @@ dependencies = [
 [[package]]
 name = "sp1-curves"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "cfg-if",
  "dashu",
@@ -2944,7 +2944,7 @@ dependencies = [
 [[package]]
 name = "sp1-derive"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2954,7 +2954,7 @@ dependencies = [
 [[package]]
 name = "sp1-hypercube"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "arrayref",
  "deepsize2",
@@ -3001,7 +3001,7 @@ dependencies = [
 [[package]]
 name = "sp1-jit"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "bincode",
  "dynasmrt",
@@ -3017,7 +3017,7 @@ dependencies = [
 [[package]]
 name = "sp1-primitives"
 version = "6.0.2"
-source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#94f426bad288008557b12be08551ad421d843d3e"
+source = "git+https://github.com/wakabat/sp1?branch=xuejie%2Fjit-cache-on-perf#935adebbb8c17834f6328c8ebad8c85fa6902bf8"
 dependencies = [
  "bincode",
  "blake3",
@@ -3227,9 +3227,9 @@ checksum = "22cddaf88f4fbc13c51aebbf5f8eceb5c7c5a9da2ac40a13519eb5b0a0e8f11c"
 
 [[package]]
 name = "toml_datetime"
-version = "1.0.1+spec-1.1.0"
+version = "1.1.0+spec-1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9b320e741db58cac564e26c607d3cc1fdc4a88fd36c879568c07856ed83ff3e9"
+checksum = "97251a7c317e03ad83774a8752a7e81fb6067740609f75ea2b585b569a59198f"
 dependencies = [
  "serde_core",
 ]
@@ -3247,21 +3247,21 @@ dependencies = [
 
 [[package]]
 name = "toml_edit"
-version = "0.25.5+spec-1.1.0"
+version = "0.25.8+spec-1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ca1a40644a28bce036923f6a431df0b34236949d111cc07cb6dca830c9ef2e1"
+checksum = "16bff38f1d86c47f9ff0647e6838d7bb362522bdf44006c7068c2b1e606f1f3c"
 dependencies = [
  "indexmap",
- "toml_datetime 1.0.1+spec-1.1.0",
+ "toml_datetime 1.1.0+spec-1.1.0",
  "toml_parser",
  "winnow 1.0.0",
 ]
 
 [[package]]
 name = "toml_parser"
-version = "1.0.10+spec-1.1.0"
+version = "1.1.0+spec-1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7df25b4befd31c4816df190124375d5a20c6b6921e2cad937316de3fccd63420"
+checksum = "2334f11ee363607eb04df9b8fc8a13ca1715a72ba8662a26ac285c98aabb4011"
 dependencies = [
  "winnow 1.0.0",
 ]
