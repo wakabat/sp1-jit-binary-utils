@@ -46,10 +46,7 @@ fn main() -> eyre::Result<()> {
     }
 
     let start = std::time::Instant::now();
-    let mut count = 0;
-    while executor.execute_chunk().is_some() {
-        count += 1;
-    }
+    let count = executor.run_till_end();
     let elapsed = start.elapsed();
 
     println!("Execution complete:");
